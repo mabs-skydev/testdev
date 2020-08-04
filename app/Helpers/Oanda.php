@@ -30,7 +30,7 @@ class Oanda
             $end_point .= "&start_time=" . $start_date;
             $end_point .= "&end_time="   . $end_date;
 
-            $end_point .= "&api_key=" . env('OANDA_API_KEY', "GGJJY4g3pShdOs92QQzQwpDI") . "&quote=TND";
+            $end_point .= "&api_key=" . config('oanda.oanda_api_key', "GGJJY4g3pShdOs92QQzQwpDI") . "&quote=TND";
 
             try {
                 $client = new Client();
