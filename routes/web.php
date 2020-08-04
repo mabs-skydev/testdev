@@ -1,5 +1,9 @@
 <?php
 
+use App\Candle;
+use App\Currency;
+use App\Helpers\Oanda;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
 
 /*
